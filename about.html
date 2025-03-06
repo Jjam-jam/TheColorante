@@ -1,0 +1,190 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <head> 
+            <meta charset="UTF-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <title>The Colorantre</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="wdth=device-width, initial-scale=1">
+            <link rel="stylesheet" media="screen and (min-width:1025px)" href="style.css">
+            <link rel="stylesheet" media="screen and (max-width:1025px)" href="style.css">
+            <link rel="stylesheet" media="screen and (max-width:767px)" href="style.css">
+            <link rel="icon" href="pics/The Colorante.png">
+        </head>
+        <style>
+            body {
+                min-height: 120vh;
+                background: url(pics/about.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                color: #fff;
+                background-attachment: fixed;
+
+            }
+        </style>
+    </head>
+
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+         The Colorante
+        </div>
+    <ul class="nav-links">
+        <li><a href="TheColorante.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="showcase.html">showcase</a></li>
+        <li><a href="rates.html">rates</a></li>
+        <li><a href="promos.html">promos</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+        <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+        </nav>
+    </header>
+            
+                
+        <script src="script.js"></script>
+                
+        <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0 );
+     })
+        </script>
+            
+            
+        <script type="text/javascript">
+        const navSlide = ()=> {
+        const line = document.querySelector('.line');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+                
+        line.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+            
+        navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = ''
+        } else {
+        link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
+         }
+    });
+    });     
+             
+    }
+            
+    navSlide();
+            
+    </script>
+
+<div class="section-title about" style="border-color:#ececec;">
+    
+    <h1 class="font-white">
+        The Colorante
+    </h1>
+    <hr>
+    <p class="color-white">Indulge yourself into the world of Luxury</p>
+
+</div>
+
+<div class="container-about">
+
+<div class="story">
+    <h3 class="color-white" style="font-size: 25px;">OUR STORY</h3>
+    <p style="font-family:calibri;" class="color-white1">The Colorante Hotel is a four-star hotel that provides one-of-a-kind luxurious lodging services and a unique ambiance, allowing guests to enjoy a day having a feeling of being at home.</p>
+    <p style="font-family:calibri;" class="color-white1">The Colorante Hotel will offer facilities for guests such as Business centers, Function rooms, Grand Ballroom, swimming pools, a sports court, boutique shops, a gym, and spas. The establishment will not only provide services to the hotel guests but will also open the restaurant doors to the customers who want to enjoy fine dining and delectable meals that the restaurant will offer. The owners wanted to encourage the guests to try various Filipino cuisines.</p>
+    <p style="font-family:calibri;" class="color-white1">The Colorante Hotel, devoted to providing a Filipino hospitable way of accommodating, offers you a high standard of great service and a wide range of amenities to ensure that your stay is as comfortable and enjoyable as possible.</p>
+</div>
+
+<div class="mission-vision">
+
+<h2>WHY CHOOSE US?</h2>
+
+<div class="accordion">
+    <div class="acc-item">
+    <div class="acc-header"> MISSION </div>
+    <div class="acc-body">
+    <div class="acc-body-content">
+        <p class="acc-style" style="font-family:calibri;"> The Colorante strives to provide an unforgettable unique experience by providing comfortable and high-quality accommodations, as well as a passion for exceeding our guests' expectations via unwavering service. </p>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="acc-item">
+    <div class="acc-header"> VISION </div>
+    <div class="acc-body">
+    <div class="acc-body-content">
+        <p class="acc-style" style="font-family:calibri;"> To fill the country with the light and warmth of hospitality service, and to be the most prestigious independent luxurious Filipino hotel that will highlight the four natural elements that can fulfill our guests' unexpressed desires and needs.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+    <div class="about-footer">
+
+    <div class="container-footer about">
+        <div class="conatct-logo-container">
+            <div class="logo-title-contact">
+                <h3> The Colorante </h3>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container-logo-icon about">
+        
+            <a href="https://www.facebook.com/thecolorantehotel/" target="_blank">
+            <img src="pics/facebook.png" class="fb">
+            </a>
+        
+            <a href="https://www.instagram.com/thecolorantehotel/" target="_blank">
+            <img src="pics/instagram.png" class="insta">
+            </a>
+            
+        </div>
+        
+        <footer>
+        
+        <div class="last-footer about">
+            <h5 class="footer-last"> All Rights Reserved © 2022 | The Colorante </h5>
+        </div>
+        </footer>
+
+    </div>
+    
+
+
+<script>
+    const accHeaders = document.querySelectorAll(".acc-header");
+
+accHeaders.forEach(accHeaders => {
+    accHeaders.addEventListener("click", event => {
+        accHeaders.classList.toggle("active");
+        const accBody = accHeaders.nextElementSibling;
+        if (accHeaders.classList.contains("active")) {
+            accBody.style.maxHeight = accBody.scrollHeight + "px";
+        }
+        else {
+            accBody.style.maxHeight = 0;
+        }
+    });
+});
+</script>
+
+<br>
+    
+
+</body>
+
+</html>

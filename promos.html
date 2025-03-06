@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>The Colorantre</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="wdth=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (min-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:767px)" href="style.css">
+        <link rel="icon" href="pics/The Colorante.png">
+
+        <style>
+            body {
+                min-height: 210vh;
+                background: url(pics/promos.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                background-attachment: fixed;
+
+            }
+
+            .rates-button a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+<body>
+
+
+    <header>
+        <nav>
+        <div class="logo">
+         The Colorante
+        </div>
+    <ul class="nav-links">
+        <li><a href="TheColorante.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="showcase.html">showcase</a></li>
+        <li><a href="rates.html">rates</a></li>
+        <li><a href="promos.html">promos</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+        <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+        </nav>
+    </header>
+            
+                
+        <script src="script.js"></script>
+                
+        <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0 );
+     })
+        </script>
+            
+            
+        <script type="text/javascript">
+        const navSlide = ()=> {
+        const line = document.querySelector('.line');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+                
+        line.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+            
+        navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = ''
+        } else {
+        link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
+         }
+    });
+    });     
+             
+    }
+            
+    navSlide();
+            
+    </script>
+    
+
+<div class="section-title promos" style="border-color:#ececec;">
+    <h5>Hotel</h5>
+    <h1 class="rates">Promos</h1>
+    <hr>
+</div>
+
+<div class="rates-grid">
+
+<div class="rates-plan promos">
+
+    <!--Start-->
+    <div class="rates-container promos">
+        <h2 class="rates-title">
+            Aniversary Promo
+        </h2>
+    
+        <ul class="rates-list">
+            <li> Superior Room</li>
+            <li> Ahead Reservation</li>
+            <li> Full Board Meal</li>
+            <li> Balcony Set-up</li>
+            <li> Wine and Flowers</li>
+            <li> 1 Hour Swedish Massage</li>
+            <li> Room at 30% Dicount</li>
+        </ul>
+        <div class="rates-button"> 
+           <a href="book-promos.html"> <button id="show-book"> BOOK </button> </a>
+        </div>
+    
+    </div>
+    <!--End-->
+    
+    
+    <!--Start-->
+    <div class="rates-container promos">
+        <h2 class="rates-title">
+           Like and Share Promo
+        </h2>
+    
+        <ul class="rates-list">
+            <li> All Rooms at 30% Discount </li>
+            <li> For Walk In Guest Only</li>
+            <li> Like and Share the promo on our FB Page</li>
+        </ul>
+        <div class="rates-button b"> 
+            <a href="book-promos.html"> <button id="show-book"> BOOK </button> </a>
+        </div>
+    
+    </div>
+    <!--End-->
+    
+    
+    </div>
+
+<div class="rates-plan promos">
+
+       
+    <!--Start-->
+    <div class="rates-container1 promos">
+        <h2 class="rates-title">
+            Weekend Staycation
+        </h2>
+    
+        <ul class="rates-list a">
+            <li> Check-In at our Hotel in Friday and Saturday with Rack Rate</li>
+            <li> Stay for Another Day For Free or Get 40%-50% Discount</li>
+            <li> For Deluxe And Premiere Suite Only</li>
+        </ul>
+        <div class="rates-button z"> 
+            <a href="book-promos.html"> <button id="show-book"> BOOK </button> </a>
+        </div>
+    
+    </div>
+    <!--End-->
+
+    <!--Start-->
+    <div class="rates-container1 promos">
+        <h2 class="rates-title">
+         Rainy Day Indulge For Family
+        </h2>
+        
+        <ul class="rates-list">
+            <li> During Rainy Seasons and Non Peak Only </li>
+            <li> Buffet Lunch for Two Adults Only</li>
+            <li> Nail Spa Get Manicure and Pedicure</li>
+            <li> Rooms at 40% Discount</li>
+            </ul>
+        <div class="rates-button"> 
+            <a href="book-promos.html"> <button id="show-book"> BOOK </button> </a>
+        </div>
+        
+        </div>
+        <!--End-->
+    
+    </div>
+</div>
+
+
+        <div class="about-footer promos">
+    
+        <div class="container-footer promos">
+            <div class="conatct-logo-container">
+                <div class="logo-title-contact">
+                    <h3> The Colorante </h3>
+                </div>
+            </div>
+            </div>
+            
+            <div class="container-logo-icon promos">
+            
+                <a href="https://www.facebook.com/thecolorantehotel/" target="_blank">
+                <img src="pics/facebook.png" class="fb">
+                </a>
+            
+                <a href="https://www.instagram.com/thecolorantehotel/" target="_blank">
+                <img src="pics/instagram.png" class="insta">
+                </a>
+                
+            </div>
+            
+            <footer>
+            
+            <div class="last-footer">
+                <h5 class="footer-last"> All Rights Reserved © 2022 | The Colorante </h5>
+            </div>
+            </footer>
+    
+        </div>
+    
+    
+    
+        
+</body>
+</html>

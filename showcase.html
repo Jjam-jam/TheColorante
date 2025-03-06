@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>The Colorantre</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="wdth=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (min-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:767px)" href="style.css">
+        <link rel="icon" href="pics/The Colorante.png">
+
+        <style>
+            body {
+                min-height: 250vh;
+                background: url(pics/showcase.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                color: #fff;
+                overflow-x: hidden;
+
+            }
+        </style>
+    </head>
+
+<body>
+
+    <header>
+        <nav>
+        <div class="logo">
+         The Colorante
+        </div>
+    <ul class="nav-links">
+        <li><a href="TheColorante.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="showcase.html">showcase</a></li>
+        <li><a href="rates.html">rates</a></li>
+        <li><a href="promos.html">promos</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+        <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+        </nav>
+    </header>
+            
+                
+        <script src="script.js"></script>
+                
+        <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0 );
+     })
+        </script>
+            
+            
+        <script type="text/javascript">
+        const navSlide = ()=> {
+        const line = document.querySelector('.line');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+                
+        line.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+            
+        navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = ''
+        } else {
+        link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
+         }
+    });
+    });     
+             
+    }
+            
+    navSlide();
+            
+    </script>
+
+<div class="section-title heading" style="border-color:#ececec;">
+    <h5 class="we">WE ARE DILIGENT</h5>
+    <h1 class="heading">SHOWCASE</h1>
+</div>
+
+<div class="container-shwcs">
+
+<div class="wrapper">
+    
+   
+        <div class="box"><img src="pics/bed3.jpg">
+         <div class="details">
+            <h2>EXECUTIVE BEDROOM</h2>
+        </div>
+        </div>
+         
+    
+        <div class="box"><img src="pics/bed.jpg">
+         <div class="details">
+            <h2>EXECUTIVE SUITE BEDROOM</h2>
+           </div>
+        </div>
+         
+   
+        <div class="box"><img src="pics/bed4.jpg">
+         <div class="details">
+            <h2>EXECUTIVE SUPERIOR BEDROOM</h2>
+           </div>
+        </div>
+         
+    
+        <div class="box"><img src="pics/bed2.png">
+         <div class="details">
+            <h2>SUPERIOR BEDROOM</h2>
+           </div>
+        </div>
+         
+ 
+        <div class="box"><img src="pics/bed5.png">
+         <div class="details">
+            <h2>premium BEDROOM</h2>
+           </div>
+        </div>
+         
+    
+        <div class="box"><img src="pics/bed1.jpg">
+         <div class="details">
+            <h2>deluxe BEDROOM</h2>
+           </div>
+        </div>
+         
+
+        <div class="box"><img src="pics/outsidepool.jpg">
+         <div class="details">
+            <h2>Swimming area 1</h2>
+           </div>
+        </div>
+         
+         
+        <div class="box"><img src="pics/outsidepool1.jpg">
+         <div class="details">
+            <h2>Swimming area 2</h2>
+           </div>
+        </div>
+         
+         
+        <div class="box"><img src="pics/outsidepool2.jpg">
+         <div class="details">
+            <h2>Swimming area 3</h2>
+           </div>
+        </div>
+         
+         
+        <div class="box"><img src="pics/restaurant.jpg">
+         <div class="details">
+            <h2>restaurant </h2>
+           </div>
+        </div>
+         
+
+        <div class="box"><img src="pics/restaurant1.jfif">
+         <div class="details">
+            <h2>restaurant </h2>
+           </div>
+        </div>
+         
+      
+        <div class="box"><img src="pics/restaurant2.jpg">
+         <div class="details">
+            <h2>restaurant </h2>
+           </div>
+        </div>
+         
+        
+        <div class="box"><img src="pics/livingarea.png">
+         <div class="details">
+            <h2>EXECUTIVE living area</h2>
+           </div>
+        </div>
+         
+
+        <div class="box"><img src="pics/gym.jpg">
+         <div class="details">
+            <h2>gym</h2>
+           </div>
+        </div>
+         
+   
+        <div class="box"><img src="pics/spa.jpg">
+         <div class="details">
+               <h2>spa</h2>
+           </div>
+        </div>
+         
+    </div>  
+</div>
+
+<div class="about-footer showcase">
+    
+    <div class="container-footer showcase">
+        <div class="conatct-logo-container">
+            <div class="logo-title-contact">
+                <h3> The Colorante </h3>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container-logo-icon showcase">
+        
+            <a href="https://www.facebook.com/thecolorantehotel/" target="_blank">
+            <img src="pics/facebook.png" class="fb">
+            </a>
+        
+            <a href="https://www.instagram.com/thecolorantehotel/" target="_blank">
+            <img src="pics/instagram.png" class="insta">
+            </a>
+            
+        </div>
+        
+        <footer>
+        
+        <div class="last-footer showcase">
+            <h5 class="footer-last"> All Rights Reserved © 2022 | The Colorante </h5>
+        </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

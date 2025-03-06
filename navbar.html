@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>The Colorantre</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="wdth=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (min-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:1025px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:767px)" href="style.css">
+        <link rel="icon" href="pics/The Colorante.png">
+    </head>
+
+<body>
+
+<header>
+<nav>
+    <div class="logo">
+     The Colorante
+    </div>
+    <ul class="nav-links">
+        <li><a href="TheColorante.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="showcase.html">showcase</a></li>
+        <li><a href="rates.html">rates</a></li>
+        <li><a href="promos.html">promos</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+</header>
+
+    
+<script src="script.js"></script>
+    
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0 );
+             })
+</script>
+
+
+<script type="text/javascript">
+   const navSlide = ()=> {
+    const line = document.querySelector('.line');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+    
+    line.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+
+        navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = ''
+        } else {
+            link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
+        }
+    });
+    });
+
+ 
+}
+
+   navSlide();
+
+</script>
+
+</body>
+</html>
